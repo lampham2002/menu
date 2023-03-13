@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{}
+.header{
+    height: 80px;
+    width: 100%;
+    background: black;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    top: 0;
+    position:fixed;
+    display: flex;
+    padding: 0 30px;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: aliceblue;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+   
+    display: none;
+}
+.nav-bar ul li a{
+    display: block;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: black;
+    background: white;
+}
+.nav-bar.active{
+    background: black;
+    color: white;
+}
+@media only screen and (max-width:1222px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+
+    }
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: black;
+        transition: 0.2s;
+        overflow: hidden;
+        
+    }
+    .nav-bar.active{
+       
+        height: 450px;
+    }
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+        
+       
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+    margin-bottom: 12px;
+    
+    }
+}
+@media (max-width:900px) {
+    .nav-bar {
+position: fixed;
+top: 0;
+left:0;
+max-width: 200px;
+display: block;
+transition: all 0.3s ease;
+margin-top: 55px;
+
+}
+}
+.jean{
+    color: black;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 80px;
+    padding: 5px 30px;
+}
+.content{
+
+    background: url(jeans.jpg) top center / cover;
+    height: 500px;
+    width: 100%;
+}
+.text-content{
+    
+    padding: 30px 30px;
+}
+.text-heading{
+    font-size: 40px;
+    font-weight: 200;
+
+}
+.text-description{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.buy{
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    padding:12px 24px ;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.section-sub-heading{
+    color: black;
+    padding: 10px 30px;
+}
+.member-list{
+    margin-top: 30px;
+   overflow: hidden;
+}
+.member-item{
+    float: left;
+     padding: 5px;
+}
+.member-img{
+    width: 250px;
+    margin-left: 45px;
+}
+.member-name{
+    margin-left: 45px;
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+.member-namee{
+    margin-left: 45px;
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+.tour-section{
+    background-color:black ;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+.section-heading{
+    font-size: 30px;
+    font-weight: 600;
+}
+.section-sub-heading{
+    color: aliceblue;
+    margin-left: -20px;
+
+}
+.form-control{
+   font-size: 20px;
+   width: 100%;
+   padding: 8px;
+   margin: 5px;
+}
+.button{
+    padding: 10px;
+    background: red;
+    color: aliceblue;
+    font-size: 20px;
+}
+.row{
+    background-color:white;
+    height: 400px;
+    padding: 10px;
+    margin-top: 30px;
+    
+}
+.cold{
+    float: left;
+    margin-left: 100px;
+    
+}
+.nice{
+    margin-left: 40px;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+}
+.nicee{
+    font-size: 15px;
+        color: black;
+        font-style: italic;
+        margin-top: 25px;
+        margin-left: 20px;
+        overflow: hidden;
+        text-align: center;
+}
+.buttonn{
+    background-color: black;
+    color: aliceblue;
+    padding: 8px;
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.cold-halfl{
+    color: aliceblue;
+}
+.form-controll{
+    padding: 8px;
+    margin-left: 40px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.class{
+    padding: 0 30px;
+}
+.about li {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.about li a{
+    font-weight: 100;
+    color: black;
+    font-style: italic;
+    font-size: 15px;
+   
+}
+.icon{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-style:italic;
+    }
+    .iconn{
+        margin-top: 20px;
+        margin-left: 40px; 
+        font-weight: 100;
+        font-style: italic;
+    }
+    .footer{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 20px;
+    }
+.tour-sectionn{
+    background-color: black;
+    color: aliceblue;
+    height: 100px;
+    overflow: hidden;
+}
+.content-sectionn{
+    text-align: center;
+    margin-top: 50px;
+}
+.hello{
+    color: aliceblue;
+}
+
