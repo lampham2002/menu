@@ -32,11 +32,11 @@ html{
 .hamburger{
     display: none;
 }
-.nav-bar ul{
+.nav-bar .run{
    
     display: none;
 }
-.nav-bar ul li a{
+.nav-bar .run li a{
     display: block;
     color: aliceblue;
     font-size: 20px;
@@ -44,7 +44,7 @@ html{
     border-radius: 50px;
     margin: 0 5px;
 }
-.nav-bar ul li a:hover{
+.nav-bar .run li a:hover{
     color: black;
     background: white;
 }
@@ -62,6 +62,8 @@ html{
         height: 3px;
         background: white;
         margin: 6px 0;
+        
+      
 
     }
     .nav-bar{
@@ -80,7 +82,7 @@ html{
        
         height: 450px;
     }
-    .nav-bar ul {
+    .nav-bar .run {
         display: block;
         width: fit-content;
         margin: 80px auto 0 auto;
@@ -90,26 +92,27 @@ html{
         
        
     }
-    .nav-bar.active ul{
+    .nav-bar.active .run{
         opacity: 1;
     }
-    .nav-bar ul li a{
+    .nav-bar .run li a{
     margin-bottom: 12px;
     
-    }
-}
-@media (max-width:1100px) {
+    } 
     .nav-bar {
 position: fixed;
 top: 0;
 left:0;
+right: 0;
 max-width: 200px;
 display: block;
 transition: all 0.3s ease;
 margin-top: 55px;
 
 }
+
 }
+
 .jean{
     color: black;
     font-size: 30px;
@@ -205,11 +208,16 @@ margin-top: 55px;
     height: 400px;
     padding: 10px;
     margin-top: 30px;
-    
+    color: black;
+    width: 100%;
+   
+
 }
 .cold{
     float: left;
     margin-left: 100px;
+    
+    
     
 }
 .nice{
@@ -261,18 +269,19 @@ margin-top: 55px;
 }
 .icon{
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
     font-style:italic;
+    
     }
     .iconn{
         margin-top: 20px;
-        margin-left: 40px; 
+        margin-left: 20px; 
         font-weight: 100;
         font-style: italic;
     }
     .footer{
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
     font-size: 20px;
     }
 .tour-sectionn{
@@ -280,12 +289,204 @@ margin-top: 55px;
     color: aliceblue;
     height: 100px;
     overflow: hidden;
+    width: 100%;
+    
 }
 .content-sectionn{
     text-align: center;
     margin-top: 50px;
+    box-sizing: inherit;
+   
 }
 .hello{
+    color:  aliceblue;
+    
+   
+}
+@media  screen and (max-width:900px){
+    .member-img{
+        width: 200px;
+        margin-left: 5px;
+    }
+    .class{
+        padding: 0 10px;
+    }
+    .cold {
+        margin-left: 100px;
+        float: left;
+    }
+    .form-controll{
+       text-align: center;
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .nice{
+        margin-left: 15px;
+        font-size: 25px;
+        font-weight: 100;
+        text-align: center;
+    }
+    .nicee{
+        font-size: 15px;
+            color: black;
+            font-style: italic;
+            margin-top: 25px;
+            margin-left: 20px;
+            overflow: hidden;
+            text-align: center;
+    }
+    .buttonn{
+        background-color: black;
+        color: aliceblue;
+        padding: 0;
+        margin-left: 15px;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .about li a{
+        font-weight: 100;
+        color: black;
+        font-style: italic;
+        font-size: 15px;
+        
+       
+    }
+    .icon{
+        margin-top: 10px;
+        margin-left: 15px;
+        font-style:italic; 
+        font-size: 15px;
+        
+        }
+        .iconn{
+            margin-top: 10px;
+            margin-left: 15px; 
+            font-weight: 100;
+            font-style: italic;
+            font-size: 15px;
+        }
+        .footer{
+        margin-top: 10px;
+        margin-left: 15px;
+        font-size: 15px;
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width:500px) {
+.member-img{
+    width: 150px;
+    margin-left: 50px;
+}
+.class{
+    padding: 0 10px;
+}
+.cold {
+    margin-left: 10px;
+    width: 100%;
+    margin-top: 30px;
+}
+.nice{
+    margin-left: 40px;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+}
+.nicee{
+    font-size: 15px;
+        color: black;
+        font-style: italic;
+        margin-top: 25px;
+        margin-left: 20px;
+        overflow: hidden;
+        text-align: center;
+}
+.buttonn{
+    background-color: black;
+    color: aliceblue;
+    padding: 8px;
+    margin-left: 150px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.cold-halfl{
     color: aliceblue;
 }
+.form-controll{
+    padding: 8px;
+    margin-left: 150px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.class{
+    padding: 0 30px;
+    text-align: center;
+    
+}
+.about li {
+    list-style-type: none;
+    margin-left: 180px;
+    margin-top: 10px;
+    display: table;
+   
+}
+.about li a{
+    font-weight: 100;
+    color: black;
+    font-style: italic;
+    font-size: 15px;
 
+   
+}
+.icon{
+    margin-top: 20px;
+     display: table;
+    font-style:italic;
+    margin-left: 170px;
+    
+    }
+    .iconn{
+        margin-top: 20px;
+        display: table;
+        margin-left: 170px;
+        font-weight: 100;
+        font-style: italic;
+    }
+    .footer{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    }
+}
